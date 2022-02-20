@@ -26,13 +26,10 @@ function App() {
     )
 
     return (
-        <div className="coin-app">
-            <div className="coin-search">
-                <h1 className="coin-text">
-                    Search currency
-                </h1>
+        <div className="flex flex-col items-center">
+            <div className="mt-8 text-2xl">
                 <form>
-                    <input type="text" placeholder="Search" className="coin-input" onChange={handleChange} />
+                    <input type="text" placeholder="Search" className="bg-black rounded text-center py-2 text-green-500" onChange={handleChange} />
                 </form>
             </div>
             {filteredCoins.map(coin => {
